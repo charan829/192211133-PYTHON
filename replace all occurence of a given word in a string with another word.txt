@@ -1,0 +1,6 @@
+input_string = str(input("enter the string:\n"))
+s1 = str(input("original word:\n"))
+s2 = str(input("replacing word:\n"))
+input_string = input_string.replace(s1, s2)
+
+print("after replacing word:",input_string)

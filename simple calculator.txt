@@ -1,0 +1,54 @@
+def calculate_power(x, n):
+    return x ** n
+
+def addition(x, n):
+    return x + n
+
+def subtraction(x, n):
+    return x - n
+
+def multiplication(x, n):
+    return x * n
+
+def division(x, n):
+    if n == 0:
+        return "Cannot divide by zero"
+    else:
+        return x / n
+
+def main():
+    print("Welcome to the Calculator App!")
+    print("Choose an operation:")
+    print("1. Calculate Power (x^n)")
+    print("2. Addition (x + n)")
+    print("3. Subtraction (x - n)")
+    print("4. Multiplication (x * n)")
+    print("5. Division (x / n)")
+
+    choice = input("Enter your choice (1/2/3/4/5): ")
+
+    if choice not in ['1', '2', '3', '4', '5']:
+        print("Invalid choice!")
+        return
+
+    x = float(input("Enter the value of x: "))
+    n = float(input("Enter the value of n: "))
+
+    if choice == '1':
+        result = calculate_power(x, n)
+        print(f"The result of {x} raised to the power of {n} is: {result}")
+    elif choice == '2':
+        result = addition(x, n)
+        print(f"The result of {x} + {n} is: {result}")
+    elif choice == '3':
+        result = subtraction(x, n)
+        print(f"The result of {x} - {n} is: {result}")
+    elif choice == '4':
+        result = multiplication(x, n)
+        print(f"The result of {x} * {n} is: {result}")
+    elif choice == '5':
+        result = division(x, n)
+        print(f"The result of {x} / {n} is: {result}")
+
+if __name__ == "__main__":
+    main()

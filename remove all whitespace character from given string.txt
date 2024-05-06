@@ -1,0 +1,3 @@
+original_string = str(input("string:"))
+no_whitespace = original_string.replace(" ", "")
+print(no_whitespace) 

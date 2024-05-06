@@ -1,0 +1,11 @@
+ 
+def check(s1, s2):
+	
+	if(sorted(s1)== sorted(s2)):
+		print("The strings are anagrams.") 
+	else:
+		print("The strings aren't anagrams.")		 
+		
+s1= str(input("first string:\n"))
+s2= str(input("second string:\n"))             
+check(s1, s2)

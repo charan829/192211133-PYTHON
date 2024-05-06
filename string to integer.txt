@@ -1,0 +1,3 @@
+number_string='123'
+number_int=int(number_string)
+print(number_int)
