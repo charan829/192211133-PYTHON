@@ -1,0 +1,3 @@
+a=('xyz',123,'abc','qwe');
+list=list(a)
+print("list element:",list)

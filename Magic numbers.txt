@@ -1,0 +1,14 @@
+number = int(input("enter the number:"))
+total_digits = len(str(number))
+copy_number = number
+while copy_number > 1:
+    sum = 0
+    while copy_number > 0:
+        sum += copy_number % 10
+        copy_number //= 10
+    copy_number = sum
+    total_digits = len(str(copy_number))
+if sum == 1:
+    print(f'{number} is a magic number')
+else:
+    print(f'{number} is not a magic number')

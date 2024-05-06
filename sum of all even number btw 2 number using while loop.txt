@@ -1,0 +1,17 @@
+def sum_of_even_numbers(start, end):
+  
+    if start % 2 != 0:
+        start += 1
+
+    even_sum = 0
+
+    while start <= end:
+        even_sum += start
+        start += 2  
+    
+    return even_sum
+
+# Example usage:
+start_num = int(input("enter the number:\n")) 
+end_num =  int(input("enter the number:\n")) 
+print("Sum of all even numbers between", start_num, "and", end_num, "is:", sum_of_even_numbers(start_num, end_num))

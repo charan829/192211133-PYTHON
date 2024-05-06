@@ -1,0 +1,6 @@
+try:
+  
+    result = "Hello" + 123
+except TypeError:
+ 
+    print("An error occurred: TypeError - Unsupported operation.")

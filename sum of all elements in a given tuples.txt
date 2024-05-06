@@ -1,0 +1,5 @@
+numTuple = (23, 16, 3, 9, 26, 2)
+print("Tuple Items = ", numTuple)
+
+tupleSum = sum(numTuple)
+print("\nThe Sum of numTuple Tuple Items = ", tupleSum)

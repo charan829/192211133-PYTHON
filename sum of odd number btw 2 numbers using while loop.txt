@@ -1,0 +1,15 @@
+def sum_of_odd_numbers(start, end):
+    
+    if start % 2 == 0:
+        start += 1
+
+    odd_sum = 0
+
+    while start <= end:
+        odd_sum += start
+        start += 2 
+    return odd_sum
+
+start_num =int(input("enter the start number:\n")) 
+end_num = int(input("enter the end number:\n"))
+print("Sum of all odd numbers between", start_num, "and", end_num, "is:", sum_of_odd_numbers(start_num, end_num))

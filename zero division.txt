@@ -1,0 +1,6 @@
+try:
+
+    result = 100 / 0
+except ZeroDivisionError:
+  
+    print("An error occurred: ZeroDivisionError - Division by zero.")

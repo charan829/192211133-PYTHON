@@ -1,0 +1,6 @@
+def is_vowel(char):
+    vowels = 'aeiouAEIOU'
+    return char in vowels
+input_string = "Hello World"
+vowels_in_string = list(map(lambda x: x, filter(is_vowel, input_string)))
+print(vowels_in_string)
