@@ -1,0 +1,5 @@
+list_1 = [16, 'a']
+list_2 = [3, 'j', 5]
+
+list_joined = list_1 + list_2
+print(list_joined)

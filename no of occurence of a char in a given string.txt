@@ -1,0 +1,8 @@
+def count_character(string, char):
+    return string.count(char)
+
+# Example usage:
+input_string = "Hello, world!"
+character_to_count = "o"
+occurrences = count_character(input_string, character_to_count)
+print(f"Number of occurrences of '{character_to_count}' in the string: {occurrences}")

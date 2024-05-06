@@ -1,0 +1,4 @@
+string =  "Welcome to Tutorial Point"
+substring = "Point"
+index = string.find(substring)
+print(index)

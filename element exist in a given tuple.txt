@@ -1,0 +1,13 @@
+test_tup = (10, 4, 5, 6, 8)
+
+print("The original tuple : " + str(test_tup))
+
+N = 9
+
+res = False
+for ele in test_tup:
+	if N == ele:
+		res = True
+		break
+
+print("Does tuple contain required value ? : " + str(res))

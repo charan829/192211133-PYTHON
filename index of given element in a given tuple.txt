@@ -1,0 +1,5 @@
+val = ('a','b','r','a','k','a','d','h','a')  
+print(val)  
+
+index = val.index('k')   
+print("Index of k is: ",index) 

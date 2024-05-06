@@ -1,0 +1,10 @@
+def gcd(*args):
+    a, b, *c = args
+    a, b = min(a, b), max(a, b)
+    gcd1 = b if not a else gcd(b % a, a)
+    for i in c:
+        gcd1 = gcd(gcd1, i)
+    return gcd1
+
+
+print(gcd(21, 45, 60))

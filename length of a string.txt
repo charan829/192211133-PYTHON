@@ -1,0 +1,2 @@
+string="manuchinnupanu"
+print(len(string))

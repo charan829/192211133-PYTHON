@@ -1,0 +1,8 @@
+string1 = str(input("string 1:\n"))
+string2 = str(input("string 2:\n"))
+
+common_chars = set(string1) & set(string2)
+
+common_chars = ''.join(sorted(common_chars))
+
+print(f"Common characters: {common_chars}")

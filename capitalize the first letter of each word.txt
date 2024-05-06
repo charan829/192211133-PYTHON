@@ -1,0 +1,6 @@
+def capitalize_words(string):
+    return string.title()
+
+input_string = str(input("enter the string: "))
+output_string = capitalize_words(input_string)
+print(output_string)

@@ -1,0 +1,13 @@
+def find_max_min_tuple(input_tuple):
+    if not input_tuple:  
+        return None, None
+    
+    max_element = max(input_tuple)
+    min_element = min(input_tuple)
+    
+    return max_element, min_element
+
+input_tuple = (5, 3, 9, 1, 7)
+max_element, min_element = find_max_min_tuple(input_tuple)
+print("Maximum element:", max_element)
+print("Minimum element:", min_element)

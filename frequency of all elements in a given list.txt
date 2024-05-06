@@ -1,0 +1,14 @@
+
+random_list = ['A', 'A', 'B', 'C', 'B', 'D', 'D', 'A', 'B']
+frequency = {}
+
+for item in random_list:
+  
+   if item in frequency:
+      # incrementing the counr
+      frequency[item] += 1
+   else:
+      # initializing the count
+      frequency[item] = 1
+
+print(frequency)

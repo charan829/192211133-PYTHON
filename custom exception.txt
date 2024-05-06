@@ -1,0 +1,11 @@
+class CustomException(Exception):
+    def __init__(self, message="This is a custom exception"):
+        self.message = message
+        super().__init__(self.message)
+def example_function(value):
+    if value < 0:
+        raise CustomException("Value cannot be negative")
+try:
+    example_function(-5)
+except CustomException as e:
+    print("Custom Exception:", e)

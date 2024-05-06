@@ -1,0 +1,5 @@
+try:
+    print(variable_that_does_not_exist)
+except NameError:
+    
+    print("An error occurred: NameError - Variable is not defined.")
